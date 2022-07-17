@@ -3,13 +3,13 @@ package Car;
 public class BuildCar {
 
     private final int orderNumber;
-    private final String model;
+    private final ModelType model;
     private final String engineAndTransmission;
-    private final String paint;
+    private final PaintOptions paint;
     private double price;
     private int quantity;
 
-    public BuildCar(int orderNumber, String model, String engineAndTransmission, String paint) {
+    public BuildCar(int orderNumber, ModelType model, String engineAndTransmission, PaintOptions paint) {
         this.orderNumber = orderNumber;
         this.model = model;
         this.engineAndTransmission = engineAndTransmission;
@@ -20,7 +20,7 @@ public class BuildCar {
         return orderNumber;
     }
 
-    public String getModel() {
+    public ModelType getModel() {
         return model;
     }
 
@@ -28,7 +28,7 @@ public class BuildCar {
         return engineAndTransmission;
     }
 
-    public String getPaint() {
+    public PaintOptions getPaint() {
         return paint;
     }
 
@@ -52,9 +52,9 @@ public class BuildCar {
     public String toString() {
         return "BuildCar{" +
                 "orderNumber=" + orderNumber +
-                ", model='" + model + '\'' +
-                ", engineAndTransmision='" + engineAndTransmission + '\'' +
-                ", paint='" + paint + '\'' +
+                ", model=" + model +
+                ", engineAndTransmission='" + engineAndTransmission + '\'' +
+                ", paint=" + paint +
                 ", price=" + price +
                 ", quantity=" + quantity +
                 '}';
