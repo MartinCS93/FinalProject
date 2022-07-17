@@ -1,5 +1,8 @@
 package Car;
 
+import Car.Types.ModelType;
+import Car.Types.PaintOptions;
+
 public class BuildCar {
 
     private final int orderNumber;
@@ -50,13 +53,13 @@ public class BuildCar {
 
     @Override
     public String toString() {
-        return "BuildCar{" +
+        return "\n" + "BuildCar{" +
                 "orderNumber=" + orderNumber +
                 ", model=" + model +
                 ", engineAndTransmission='" + engineAndTransmission + '\'' +
                 ", paint=" + paint +
                 ", price=" + price +
                 ", quantity=" + quantity +
-                '}';
+                '}' ;
     }
 }

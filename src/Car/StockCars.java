@@ -12,19 +12,23 @@ public class StockCars implements StockCarsInterface {
         stockCars.add(car);
     }
 
-
-    public void sellCars(String orderNumber) {
+    public void sellCars(int orderNumber) {
         Iterator<BuildCar> iterator = stockCars.listIterator();
-while(iterator.hasNext()) {
-    BuildCar car = iterator.next();
-    if(Objects.equals(car.getOrderNumber(), orderNumber)) {
-        iterator.remove();
-        break;
-    }
-}
+        while (iterator.hasNext()) {
+            BuildCar car = iterator.next();
+            if (Objects.equals(car.getOrderNumber(), orderNumber)) {
+                iterator.remove();
+                break;
+            }
+        }
     }
 
-
+    @Override
+    public String toString() {
+        return "StockCars{" +
+                "stockCars=" + stockCars +
+                '}' ;
+    }
 }
 
 

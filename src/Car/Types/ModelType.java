@@ -1,4 +1,4 @@
-package Car;
+package Car.Types;
 
 public enum ModelType {
     TAIGO("Volkswagen TAIGO"),

@@ -1,4 +1,4 @@
-package Car;
+package Car.Types;
 
 public enum PaintOptions {
     PURE_WHITE_UNI("Pure White Uni"),
